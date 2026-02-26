@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Joyeux Anniversaire Maman</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Audio -->
+<audio id="bg-audio" src="assets/happy-birthday.mp3" loop preload="auto"></audio>
+<button id="audio-toggle" class="audio-control" aria-label="Play / Pause musique"></button>
+
+<!-- Canvas pour confettis -->
+<canvas id="confetti"></canvas>
+
+<!-- PAGE D'ACCUEIL -->
+<section id="home-page" class="page show">
+<div class="home-content">
+<div class="intro-section">
+<p id="intro-text" class="intro-text">Aujourd'hui, le 27 f�vrier 2026, nous c�l�brons l'anniversaire de la reine du jour, ma maman ch�rie MADAME SALL DIEINABOU KANE. Je lui souhaite un joyeux anniversaire rempli d'amour, de sant�, de long�vit� et de bonheur.</p>
+<h1 id="birthday-text" class="birthday-text"></h1>
+<h2 id="date-text" class="date-text"></h2>
+</div>
+
+<div class="buttons-grid">
+<button class="btn-modern" id="btn-gallery" data-page="gallery">
+<span class="btn-icon"></span>
+<span class="btn-text">Galerie</span>
+</button>
+<button class="btn-modern" id="btn-letter" data-page="letter">
+<span class="btn-icon"></span>
+<span class="btn-text">Lettre pour Maman</span>
+</button>
+<button class="btn-modern" id="btn-quiz" data-page="quiz">
+<span class="btn-icon"></span>
+<span class="btn-text">Petit Quiz</span>
+</button>
+</div>
+</div>
+</section>
+
+<!-- PAGE GALERIE -->
+<section id="gallery-page" class="page">
+<div class="gallery-header">
+<h2>Galerie </h2>
+<p class="gallery-hint"> Passez la souris sur les photos pour voir les messages </p>
+</div>
+
+<div class="gallery-main">
+<div class="flip-card" id="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img id="gallery-photo" src="" alt="Photo">
+</div>
+<div class="flip-card-back">
+<p id="gallery-message"></p>
+</div>
+</div>
+</div>
+
+<div class="gallery-nav">
+<button id="prev-photo" class="btn-nav"> Pr�c�dent</button>
+<span id="photo-counter" class="photo-counter">1 / 15</span>
+<button id="next-photo" class="btn-nav">Suivant </button>
+</div>
+</div>
+
+<button id="gallery-back" class="btn-back"> Retour � l'accueil</button>
+</section>
+
+<!-- PAGE LETTRE -->
+<section id="letter-page" class="page">
+<div class="letter-wrapper">
+<button id="letter-back" class="btn-back"> Retour � l'accueil</button>
+
+<div class="envelope-container">
+<div class="envelope" id="envelope">
+<div class="envelope-flap"></div>
+<div class="envelope-body"></div>
+</div>
+<div class="letter" id="letter">
+<div class="letter-content">
+<h2 id="letter-title" class="letter-title"></h2>
+<p id="letter-text" class="letter-text"></p>
+<div class="signature-section">
+<p id="letter-signature" class="letter-signature"></p>
+<div class="heart-beat" id="heart-beat"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PAGE QUIZ -->
+<section id="quiz-page" class="page">
+<div class="quiz-container">
+<button id="quiz-back" class="btn-back"> Retour � l'accueil</button>
+<h2 class="quiz-title">Quiz Familial </h2>
+
+<div id="quiz-content">
+<div class="quiz-question">
+<h3 id="question-text"></h3>
+<div class="quiz-photos" id="quiz-photos"></div>
+</div>
+</div>
+
+<div id="quiz-result" class="hidden">
+<h2>F�licitations  !</h2>
+<div id="winner-display"></div>
+<p class="winner-message">Tu es la star du quiz !</p>
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

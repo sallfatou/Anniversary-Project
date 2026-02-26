@@ -1,0 +1,7 @@
+Le fichier d'arrière-plan fourni par l'utilisateur doit être placé dans :
+
+  assets/fond-anniversaire.jpg
+
+J'ai préparé le projet pour utiliser cette image (voir style.css).
+
+Si tu veux que j'intègre directement l'image comme data-URI dans le CSS, envoie-moi le fichier image en base64 ou donne-moi l'autorisation pour l'encoder et je m'en occupe. Sinon, tu peux simplement copier/placer l'image fournie (attachment) dans le chemin ci-dessus — elle sera immédiatement utilisée par la page.
